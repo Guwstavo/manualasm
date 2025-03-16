@@ -1,8 +1,15 @@
 import React from 'react'
+import logo from '../images/logoblanco.png'
+import '../styles/prueba.css'
 
 function  Prueba() {
   return (
-    <div>Hola mundo</div>
+    <div className="circulologo">
+      <img src={logo} alt="asmlogo" />
+
+    </div>
+
+
   )
 }
 
