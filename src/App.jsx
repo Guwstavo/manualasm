@@ -1,14 +1,15 @@
 //PANTALLA PRINCIPAL
 import React from 'react'
 import './App.css'
-import Prueba from './components/prueba'
+import CirculoLogo from './components/CirculoLogo'
+import FootBar from './components/Footer'
 
 function App() {
 
   return (
     <div>
-    <Prueba></Prueba>
-
+    <CirculoLogo />
+    <FootBar />
     <p></p>
     </div>
   )

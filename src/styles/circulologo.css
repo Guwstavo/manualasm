@@ -7,7 +7,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 10;
+    z-index: 1000;
     margin-top: -350px;
     display: flex;
     align-items: flex-end;
@@ -17,6 +17,7 @@
     animation-timing-function: ease-in-out;
     overflow: hidden; /* Asegura que la imagen no sobresalga */
     padding-bottom: 0px; /* Ajuste para bajar la imagen */
+    transition: 1s;
     
 }
 
@@ -26,6 +27,14 @@
     height: auto;
     margin-bottom: 5px;
 }
+
+.circulologo:hover {
+    scale: 1.01;
+    transition: 1s;
+    cursor: pointer;
+}
+
+
 
 @keyframes slideInDown {
     from {
