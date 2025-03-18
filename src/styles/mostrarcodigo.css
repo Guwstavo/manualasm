@@ -1,0 +1,17 @@
+.mostrar-codigo {
+    padding: 5px;
+    margin: 5px 0;
+    display: block;
+    margin-top: 150px;
+}
+
+.mostrar-codigo h2 {
+    font-size: 1.5rem;
+}
+
+.mostrar-codigo pre {
+    background: #202020;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: monospace;
+}
