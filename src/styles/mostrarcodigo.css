@@ -3,6 +3,7 @@
     margin: 5px 0;
     display: block;
     margin-top: 150px;
+    
 }
 
 .mostrar-codigo h2 {
@@ -14,4 +15,5 @@
     padding: 5px;
     border-radius: 5px;
     font-family: monospace;
+    text-align: left;
 }
