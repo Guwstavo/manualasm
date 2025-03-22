@@ -1,7 +1,7 @@
 const codes = [
     { 
         name: "hola.asm", 
-        description: "Este código suma dos registros.", 
+        description: "Este código imprime 'Hola, mundo!' en la consola y luego termina el programa.", 
         code: 
         `;1.- ENSAMBLAMOS: nasm -f elf32 hola.asm -o hola.o
     ;2.- ENLAZAMOS: ld -m elf_i386 -s -o hola hola.o
@@ -41,7 +41,8 @@ const codes = [
         ; Llamada al sistema exit (syscall número 1 en Linux)
         mov eax, 1       ; syscall número 1 -> sys_exit ( Carga el número de syscall 1 (sys_exit).)
         xor ebx, ebx     ; Código de salida 0 (Coloca 0 en ebx, indicando que el programa terminó sin errores.)
-        int 0x80         ; Llamado a la interrupción de Linux (Llama al kernel de Linux para ejecutar la syscall.)`
+        int 0x80         ; Llamado a la interrupción de Linux (Llama al kernel de Linux para ejecutar la syscall.)`,
+        execution: "Hola, mundo!"
     },
     { 
         name: "ciclo.asm", 

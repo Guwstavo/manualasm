@@ -17,6 +17,8 @@ function App() {
           name={codigo1.name} 
           description={codigo1.description} 
           code={codigo1.code} 
+          execution={codigo1.execution}
+
     />
     <MostrarCodigo />
     <MostrarCodigo />
