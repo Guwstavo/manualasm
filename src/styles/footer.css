@@ -1,13 +1,33 @@
 .footer {
-    background: linear-gradient(40deg,#591d9e, #4f11a0 40%);
     color: white;
     text-align: center;
-    padding: 10px;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    
+    padding: 15px;
     z-index: 100;
     font-size: 1em;
-    font-family: 'Roboto', sans-serif;
-}
+    font-family: "Roboto", sans-serif;
+    font-style: bold;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  .footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+    transition: 500ms;
+  }
+  
+  .footer-link:hover {
+    color: #6b2ecc;
+    scale: 1.1;
+    transition: 500ms;
+  }
+
+  .footer-icon {
+    margin-right: 8px;
+    font-size: 1.2em;
+  }

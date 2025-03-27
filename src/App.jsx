@@ -1,32 +1,33 @@
-//PANTALLA PRINCIPAL
-import React from 'react'
+import React,  {useEffect}  from 'react'
+import { BrowserRouter as Router, Routes, Route,  useLocation } from 'react-router-dom';
 import './App.css'
-import CirculoLogo from './components/CirculoLogo'
-import FootBar from './components/Footer'
-import MostrarCodigo from './components/MostrarCodigo'
-import codes from './data/Codes'
+import Home from './pages/Homee' 
+import ExampleDetail from './components/ExampleDetail'
 
-function App() {
+function ScrollToTop() {
+  const { pathname } = useLocation();
 
-  const codigo1 = codes.find(code => code.name === "hola.asm");
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, [pathname]); 
 
-  return (
-    <div>
-    <CirculoLogo />
-    <MostrarCodigo 
-          name={codigo1.name} 
-          description={codigo1.description} 
-          code={codigo1.code} 
-          execution={codigo1.execution}
-
-    />
-    <MostrarCodigo />
-    <MostrarCodigo />
-    <MostrarCodigo />
-    <FootBar />
-    <p></p>
-    </div>
-  )
+  return null; 
 }
 
-export default App
+function App() {
+  return (
+    <Router>
+      <div className="app-container">
+      <ScrollToTop />
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/examples/:exampleName" element={<ExampleDetail />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
+  );
+}
+
+export default App;

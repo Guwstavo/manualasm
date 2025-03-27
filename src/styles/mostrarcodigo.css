@@ -25,6 +25,6 @@
     padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
-    white-space: pre-wrap; /* Mantiene los saltos de línea y espacios en blanco */
+    white-space: pre-wrap; 
     text-align: left;
 }

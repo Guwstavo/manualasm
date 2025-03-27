@@ -1,6 +1,6 @@
 const codes = [
     { 
-        name: "hola.asm", 
+        name: "Hola, mundo!", 
         description: "Este código imprime 'Hola, mundo!' en la consola y luego termina el programa.", 
         code: 
         `;1.- ENSAMBLAMOS: nasm -f elf32 hola.asm -o hola.o
@@ -47,28 +47,39 @@ const codes = [
     { 
         name: "ciclo.asm", 
         description: "Este código multiplica AX por BX.", 
-        code: "MOV AX, 2\nMUL BX" 
+        code: "MOV AX, 2\nMUL BX",
+        execution: "Hola, mundo!"
     },
     { 
         name: "leer.asm", 
         description: "Este código compara AX con BX.", 
-        code: "CMP AX, BX\nJZ etiqueta" 
+        code: "CMP AX, BX\nJZ etiqueta",
+        execution: "Hola, mundo!"
     },
     { 
         name: "malo", 
         description: "Este código compara AX con BX.", 
-        code: "CMP AX, BX\nJZ etiqueta" 
+        code: "CMP AX, BX\nJZ etiqueta",
+        execution: "Hola, mundo!"
     },
     { 
         name: "calculadora.asm", 
         description: "Este código compara AX con BX.", 
-        code: "CMP AX, BX\nJZ etiqueta" 
+        code: "CMP AX, BX\nJZ etiqueta",
+        execution: "Hola, mundo!"
     },
     { 
         name: "suma_y_ciclo.asm", 
         description: "Este código compara AX con BX.", 
-        code: "CMP AX, BX\nJZ etiqueta" 
-    }
+        code: "CMP AX, BX\nJZ etiqueta",
+        execution: "Hola, mundo!"
+    },
+    { 
+        name: "pene", 
+        description: "Este código compara penes.", 
+        code: "CMP AX, BX\nJZ etiqueta",
+        execution: "Hola, mundo!"
+    },
 ];
 
 export default codes;

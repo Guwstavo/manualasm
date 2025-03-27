@@ -1,13 +1,16 @@
-import React from 'react'
-import '../styles/footer.css'
+import React from "react";
+import { FaGithub } from "react-icons/fa"; // Importamos el ícono de GitHub
+import "../styles/footer.css";
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer">
       <p>Manual Ensamblador 2025 ©</p>
-      <p>By: <a href="https://github.com/Guwstavo">Gustavo</a></p>
-    </div>
-  )
+      <a href="https://github.com/Guwstavo" className="footer-link">
+          <FaGithub className="footer-icon" /> Gustavo
+        </a>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

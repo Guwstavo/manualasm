@@ -18,6 +18,7 @@
     overflow: hidden; /* Asegura que la imagen no sobresalga */
     padding-bottom: 0px; /* Ajuste para bajar la imagen */
     transition: 1s;
+    box-shadow: 0 4px 12px rgba(211, 203, 203, 0.1);
     
 }
 

@@ -1,0 +1,37 @@
+.example-detail-content {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; 
+  }
+  
+  .back-button-container {
+    position: absolute;
+    top: 0;
+    left: 10;
+    margin-bottom: 1rem;
+  }
+  
+  .back-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    transition: 500ms;
+  }
+
+  
+  .back-button:hover {
+    color: #742ec4;
+    transition: 500ms;
+    scale: 1.1;
+  }
+  
+  .back-icon {
+    font-size: 1rem;
+    
+  }
