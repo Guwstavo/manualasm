@@ -1,0 +1,81 @@
+/* Contenedor de la sección */
+.commands-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Título de la sección */
+  .commands-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffffff; /* Color claro para el texto */
+  }
+  
+  /* Contenedor de la tabla (para permitir scroll horizontal en pantallas pequeñas) */
+  .commands-table-wrapper {
+    overflow-x: auto;
+  }
+  
+  /* Estilo de la tabla */
+  .commands-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2d2d2d; /* Fondo oscuro similar a las tarjetas */
+    color: #ffffff; /* Texto claro */
+  }
+  
+  /* Encabezados de la tabla */
+  .commands-table th {
+    background-color: #4f11a0; /* Color morado similar a tu tema */
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #591d9e; /* Borde más claro */
+  }
+  
+  /* Celdas de la tabla */
+  .commands-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #444; /* Borde sutil entre filas */
+    font-size: 1rem;
+  }
+  
+  /* Ajuste para la columna de categoría (más estrecha) */
+  .commands-table th:nth-child(1),
+  .commands-table td:nth-child(1) {
+    width: 15%; /* La columna de categoría es más estrecha */
+  }
+  
+  /* Ajuste para la columna de comando */
+  .commands-table th:nth-child(2),
+  .commands-table td:nth-child(2) {
+    width: 20%;
+  }
+  
+  /* Ajuste para la columna de descripción */
+  .commands-table th:nth-child(3),
+  .commands-table td:nth-child(3) {
+    width: 40%;
+  }
+  
+  /* Ajuste para la columna de ejemplo */
+  .commands-table th:nth-child(4),
+  .commands-table td:nth-child(4) {
+    width: 25%;
+  }
+  
+  /* Estilo para los ejemplos (código) */
+  .commands-table code {
+    background-color: #1a1a1a; /* Fondo más oscuro para el código */
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-family: "Courier New", Courier, monospace;
+    white-space: pre-wrap; /* Permite que el código se ajuste al ancho */
+  }
+  
+  /* Efecto hover en las filas */
+  .commands-table tbody tr:hover {
+    background-color: #3a3a3a; /* Fondo más claro al hacer hover */
+  }

@@ -5,6 +5,7 @@ import Asmsetup from '../components/Asmsetup'
 import Footer from '../components/Footer'
 import ExampleSelector from '../components/ExampleSelector'
 import ExampleDetail from '../components/ExampleDetail'
+import NasmCommands from '../components/NasmCommands'
 
 
 
@@ -15,6 +16,7 @@ function Home() {
         <Asmabout />
         <Asmsetup />
         <ExampleSelector />
+        <NasmCommands />
         <Footer />
     </div>
   )

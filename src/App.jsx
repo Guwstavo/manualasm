@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
-import Home from './Homee';
+import Home from './pages/Homee';  
 import ExampleDetail from './components/ExampleDetail';
 
 function ScrollToTop() {
