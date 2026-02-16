@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import ExampleSelector from '../components/ExampleSelector'
 import ExampleDetail from '../components/ExampleDetail'
 import NasmCommands from '../components/NasmCommands'
+import NumberConverter from '../components/NumberConverter'
 
 
 
@@ -17,6 +18,7 @@ function Home() {
         <Asmsetup />
         <ExampleSelector />
         <NasmCommands />
+        <NumberConverter />
         <Footer />
     </div>
   )

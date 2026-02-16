@@ -1,0 +1,65 @@
+.docs-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #4d1d8b;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.docs-button:hover {
+  background-color: #591d9e;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.docs-button:active {
+  transform: translateY(-1px);
+}
+
+.docs-icon {
+  font-size: 1.2rem;
+}
+
+.docs-text {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive - en móviles hacerlo más compacto */
+@media (max-width: 768px) {
+  .docs-button {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    top: 15px;
+    right: 15px;
+  }
+
+  .docs-icon {
+    font-size: 1rem;
+  }
+
+  .docs-text {
+    display: none; /* Ocultar texto en móviles, solo mostrar icono */
+  }
+}
+
+/* Para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .docs-button {
+    padding: 8px 12px;
+    top: 10px;
+    right: 10px;
+  }
+}

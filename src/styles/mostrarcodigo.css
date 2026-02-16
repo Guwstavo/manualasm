@@ -2,7 +2,7 @@
     padding: 5px;
     margin: 5px 0;
     display: block;
-    margin-top: 150px;;
+    margin-top: 150px;
 }
 
 .mostrar-codigo h2 {
@@ -18,13 +18,211 @@
     font-size: 1rem;
 }
 
+.code-container {
+    position: relative;
+    margin: 15px 0;
+}
+
+.code-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.action-btn {
+    background-color: #282a36;
+    color: #f8f8f2;
+    border: 1px solid #44475a;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #44475a;
+    transform: translateY(-2px);
+}
+
+.action-btn:active {
+    transform: translateY(0);
+}
+
+.copy-btn:hover {
+    background-color: #50fa7b;
+    color: #282a36;
+}
+
+.edit-btn:hover {
+    background-color: #8be9fd;
+    color: #282a36;
+}
+
+.reset-btn:hover {
+    background-color: #ff79c6;
+    color: #282a36;
+}
+
+.simulation-btn {
+    background-color: #44475a;
+}
+
+.simulation-btn.active {
+    background-color: #50fa7b;
+    color: #282a36;
+}
+
+.simulation-btn:hover {
+    background-color: #50fa7b;
+    color: #282a36;
+}
+
+.simulation-warning {
+    background-color: #ff5555;
+    color: #f8f8f2;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.simulation-badge {
+    background-color: #50fa7b;
+    color: #282a36;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+.console-output.error {
+    border: 2px solid #ff5555;
+    background-color: #3d2020;
+    color: #ff9999;
+}
+
+.registers-section {
+    margin-top: 25px;
+}
+
+.toggle-registers-btn {
+    width: 100%;
+    background-color: #282a36;
+    color: #8be9fd;
+    border: 2px solid #44475a;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.toggle-registers-btn:hover {
+    background-color: #44475a;
+    border-color: #8be9fd;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(139, 233, 253, 0.2);
+}
+
+.toggle-registers-btn:active {
+    transform: translateY(0);
+}
+
+.code-editor {
+    width: 100%;
+    min-height: 400px;
+    background-color: #282a36;
+    color: #f8f8f2;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    padding: 15px;
+    border: 1px solid #44475a;
+    border-radius: 5px;
+    resize: vertical;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.code-editor:focus {
+    outline: none;
+    border-color: #8be9fd;
+}
+
+.execution-container {
+    margin-top: 20px;
+}
+
+.execution-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.execution-header h3 {
+    margin: 0;
+}
+
+.edit-execution-btn {
+    background-color: #282a36;
+    color: #f8f8f2;
+    border: 1px solid #44475a;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.edit-execution-btn:hover {
+    background-color: #ffb86c;
+    color: #282a36;
+}
+
+.execution-editor {
+    width: 100%;
+    min-height: 150px;
+    background-color: #2d2d2d;
+    color: #aba6b6;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #44475a;
+    border-radius: 5px;
+    resize: vertical;
+    white-space: pre-wrap;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.execution-editor:focus {
+    outline: none;
+    border-color: #ffb86c;
+}
+
 .console-output {
     background-color: #2d2d2d;
     color: #aba6b6;
     font-family: 'Courier New', Courier, monospace;
     padding: 10px;
     border-radius: 5px;
-    margin-top: 10px;
     white-space: pre-wrap; 
     text-align: left;
+    border: 1px solid #44475a;
 }
